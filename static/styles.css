@@ -1,1 +1,14 @@
-/* Your styles can go here. */
+/* Your CSS goes here */
+
+p {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+form .input_box {
+    background-color: yellow;
+}
+
+#last_name {
+    font-weight: bold;
+}

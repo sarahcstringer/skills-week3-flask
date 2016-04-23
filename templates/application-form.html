@@ -4,10 +4,31 @@
     <title>Skills-Web</title>
     <link rel="stylesheet" href="/static/styles.css">
 </head>
-<body>
 
-<!-- This page needs a form that can capture data about the user's
-first name, last name, job title, and salary requirements. -->
+<body>
+<h1>Application Form</h1>
+
+<p>Thank you for your interest in applying for an engineering position with our company. Please complete the form below. Click 'submit' below when you are finished.</p>
+
+<form action='/application' method='POST'>
+    <label for='first_name'>First Name:</label>
+    <input id='first_name' type='text' name='first_name' class='input_box'><br><br>
+    <label for='last_name'>Last Name:</label>
+    <input id="last_name" type='text' name='last_name' class='input_box'><br><br>
+    <label for='Salary Requirement'>Salary Requirement:</label>
+    <input id='salary_requirements' type='number' name='salreq' class='input_box'>
+    <br><br>
+    <legend>Applying for (indicate one):</legend>
+    <input id='software_engineer' type='radio' name='job' value='softeng'>
+    <label for='software_engineer'>Software Engineer</label>
+    <input id='qa_engineer' type='radio' name='job' value='qa'>
+    <label for='qa_engineer'>QA Engineer</label>
+    <input id='product_manager' type='radio' name='job' value='prodman'>
+    <label for='product_manager'>Product Manager</label>
+    <br><br>
+    <input type='submit' name='submit' class='input_box'>
+
+</form>
 
 </body>
 </html>
